@@ -112,7 +112,8 @@ function generate() {
 
 function next() {
 	document.getElementById('msj-title').innerHTML = "Felicidades, pasaste al nivel " + (currentlevel+1);
-	document.getElementById('msj-txt').innerHTML = "Solo te tomó " + clicks + " clicks";
+	document.getElementById('msj-txt').innerHTML = "Solo te tomó " + clicks + " click";
+	if(clicks>1) document.getElementById('msj-txt').innerHTML += "s";
 	document.getElementById('msj').className = "";
 	currentlevel++;
 	clicks = 0;
