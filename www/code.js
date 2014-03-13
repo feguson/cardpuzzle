@@ -83,6 +83,10 @@ function load(k) {
 	}
 }
 
+function back() {
+	load(currentlevel-1);
+}
+
 function go(i,j) {
 	clicks++;
 	l[i][j] = !l[i][j];
