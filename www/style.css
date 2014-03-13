@@ -13,12 +13,14 @@ body{background: #222;font:1em/1.618 "Roboto", sans-serif; font-weight: 100}
 
 .max .s1{background:#d40000;}
 
-#msj{color:#fff;background:rgba(0,0,0,.9);position: fixed;width:100%;height:100%;text-align: center;font-size: 2.5em;}
+#msj{color:#fff;background:rgba(0,0,0,.9);position: fixed;width:100%;height:100%;text-align: center;font-size: 2.5em;z-index: 2}
 #msj h1{font-size: 1.5em}
 #msj.hide{-webkit-transform: translatey(100%);opacity:0;}
 #cerrar{position: fixed;bottom: 2rem;text-align: center;font-size: .75em;width:100%}
 
-.icon{font-family: FontAwesome;background:#000;color:#fff;font-size: 2em;width:2em;height:2em;line-height:2em;position: absolute;text-align: center;text-decoration: none;}
+#playstore{position: absolute;top: .5em;left:.5em;z-index: 1}
+
+.icon{font-family: FontAwesome;background:#000;color:#fff;font-size: 2em;width:2em;height:2em;line-height:2em;position: absolute;text-align: center;text-decoration: none;position: absolute;top: 0;right: 0}
 
 .p{padding: 1rem}
 
