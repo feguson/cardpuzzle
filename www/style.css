@@ -1,4 +1,4 @@
-*{margin:0;padding:0;position: relative;transition: -webkit-transform .5s}
+*{margin:0;padding:0;position: relative;transition: -webkit-transform .5s, opacity .5s}
 
 body{background: #222;font:1em/1.618 "Roboto", sans-serif; font-weight: 300}
 
@@ -11,7 +11,15 @@ body{background: #222;font:1em/1.618 "Roboto", sans-serif; font-weight: 300}
 .s0{background:#fff;}
 .s1{background:#8a0;-webkit-transform: rotateY(180deg);}
 
-#msj{color:#fff;background:rgba(0,0,0,.8);position: fixed;width:100%;height:100%;text-align: center;font-size: 3em;}
-#msj.hide{-webkit-transform: translatey(100%);}
+#msj{color:#fff;background:rgba(0,0,0,.9);position: fixed;width:100%;height:100%;text-align: center;font-size: 3em;}
+#msj h1{font-size: 1.5em}
+#msj.hide{-webkit-transform: translatey(100%);opacity:0;}
+#cerrar{position: fixed;bottom: 2rem;text-align: center;font-size: .5em;width:100%;}
 
 .p{padding: 1rem}
+
+@font-face {
+	src : url("res/fonts/Roboto-thin.ttf");
+	font-family: "Roboto";
+	font-weight: 300;
+}
