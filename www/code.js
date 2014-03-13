@@ -60,7 +60,7 @@ for(x=0;x<5;x++) {
 
 function load(k) {
 
-	if(k<3) {
+	if(k<19) {
 		newlevel = lvl[k];
 	
 		for(y=0;y<5;y++) for(x=0;x<5;x++) {
