@@ -7,36 +7,32 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
 
-<div id="main" onclick="render()">
-	<div id="c00" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c10" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c20" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c30" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c40" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-
-	<div id="c01" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c11" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c21" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c31" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c41" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-
-	<div id="c02" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c12" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c22" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c32" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c42" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-
-	<div id="c03" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c13" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c23" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c33" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c43" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-
-	<div id="c04" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c14" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c24" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c34" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
-	<div id="c44" class="c"><div class="p"><div class="s s0">.</div><div class="s s1">.</div></div></div>
+<div id="main">
+	<div id="c00" onclick="go(0,0)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c10" onclick="go(1,0)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c20" onclick="go(2,0)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c30" onclick="go(3,0)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c40" onclick="go(4,0)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c01" onclick="go(0,1)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c11" onclick="go(1,1)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c21" onclick="go(2,1)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c31" onclick="go(3,1)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c41" onclick="go(4,1)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c02" onclick="go(0,2)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c12" onclick="go(1,2)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c22" onclick="go(2,2)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c32" onclick="go(3,2)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c42" onclick="go(4,2)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c03" onclick="go(0,3)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c13" onclick="go(1,3)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c23" onclick="go(2,3)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c33" onclick="go(3,3)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c43" onclick="go(4,3)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c04" onclick="go(0,4)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c14" onclick="go(1,4)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c24" onclick="go(2,4)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c34" onclick="go(3,4)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
+	<div id="c44" onclick="go(4,4)" class="c"><div class="s s0">.</div><div class="s s1">.</div></div>
 
 </div>
 

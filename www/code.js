@@ -20,16 +20,19 @@ var l = []
 
 for(x=0;x<5;x++) {
 	l[x] = [];
-	for(y=0;y<5;y++) l[x][y] = 1;
+	for(y=0;y<5;y++) l[x][y] = 0;
 }
 
-function render() {
-	for(x=0;x<5;x++) {
-		for(y=0;y<5;y++) {
-			if(l[x][y]==1) {
-
-				document.getElementById('c' + x + '' + y).className  = 'c changed';
-			}
+function go(i,j) {
+	l[i][j] = !l[i][j];
+	document.getElementById('c' + i + '' + j).style.webkitTransform  += 'rotate3d(0,1,0,-180deg)';
+	for(x=-1;x<2;x+=2) {
+		if(0<=i+x && i+x<=4) {
+			l[i+x][j] = !l[i+x][j];
+			document.getElementById('c' + (i+x) + '' + j).style.webkitTransform  += 'rotate3d(0,1,0,-180deg)';
+		}
+		if(0<=j+x && j+x<=4) {
+			document.getElementById('c' + i + '' + (j+x)).style.webkitTransform  += 'rotate3d(0,1,0,-180deg)';
 		}
 	}
 }
