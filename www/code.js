@@ -18,7 +18,7 @@ main.style.webkitPerspective = size + 'px';
 
 //initializing
 var lvl = [];
-lvl[0] = '0100000100011100010000000';
+lvl[0] = '0000000100011100010000000';
 
 var l = []
 for(x=0;x<5;x++) {
