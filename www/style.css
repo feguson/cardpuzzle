@@ -1,8 +1,8 @@
-*{margin:0;padding:0;position: relative;transition: -webkit-transform .5s}
+*{margin:0;padding:0;position: relative;transition: -webkit-transform 2s}
 
 body{background: #222}
 
-#main{position: absolute;-webkit-perspective: 800px;}
+#main{position: absolute;-webkit-perspective: 1200px;}
 
 .p{position: absolute;top:5%;left:5%;bottom:5%;right:5%}
 
@@ -11,6 +11,6 @@ body{background: #222}
 .s{-webkit-backface-visibility:hidden;position:absolute;height:100%;width:100%;color:transparent;}
 
 .s0{background:#fff;}
-.s1{background:#8f0;-webkit-transform: rotateY( 180deg );}
+.s1{background:#0c75e0;-webkit-transform: rotateY(180deg);}
 
-.c:hover{-webkit-transform: rotateY( 180deg )}
+.c:hover{-webkit-transform: rotateZ(45deg) rotateY(180deg) rotateZ(-45deg)}
