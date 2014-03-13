@@ -25,14 +25,14 @@ for(x=0;x<5;x++) {
 
 function go(i,j) {
 	l[i][j] = !l[i][j];
-	document.getElementById('c' + i + '' + j).style.webkitTransform  += 'rotate3d(0,1,0,-180deg)';
+	document.getElementById('c' + i + '' + j).style.webkitTransform  += 'rotateY(180deg)';
 	for(x=-1;x<2;x+=2) {
 		if(0<=i+x && i+x<=4) {
 			l[i+x][j] = !l[i+x][j];
-			document.getElementById('c' + (i+x) + '' + j).style.webkitTransform  += 'rotate3d(0,1,0,-180deg)';
+			document.getElementById('c' + (i+x) + '' + j).style.webkitTransform  += 'rotateY(' + (180*x) + 'deg)';
 		}
 		if(0<=j+x && j+x<=4) {
-			document.getElementById('c' + i + '' + (j+x)).style.webkitTransform  += 'rotate3d(0,1,0,-180deg)';
+			document.getElementById('c' + i + '' + (j+x)).style.webkitTransform  += 'rotateX(' + (-180*x) + 'deg)';
 		}
 	}
 }
