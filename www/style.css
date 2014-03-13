@@ -2,11 +2,11 @@
 
 body{background: #222}
 
-#main{position: absolute;-webkit-perspective: 1200px;}
+#main{position: absolute;}
 
-.c{width:20%;height:20%;float:left;-webkit-transform-style: preserve-3d}
+.c{width:20%;height:20%;float:left;-webkit-transform-style: preserve-3d;}
 
 .s{-webkit-backface-visibility:hidden;position:absolute;height:90%;width:90%;color:transparent;margin:5%;}
 
 .s0{background:#fff;}
-.s1{background:#0c75e0;-webkit-transform: rotateY(180deg);}
+.s1{background:#8a0;-webkit-transform: rotateY(180deg);}
