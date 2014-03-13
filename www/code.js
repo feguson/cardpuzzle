@@ -1,3 +1,5 @@
+window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
+
 //resizing
 var wW = window.innerWidth;
 var wH = window.innerHeight;

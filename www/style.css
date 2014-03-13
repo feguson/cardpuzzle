@@ -29,7 +29,7 @@ body{background: #222;font:1em/1.618 "Roboto", sans-serif; font-weight: 100}
 }
 
 @font-face {
-	src : url("res/fonts/FontAwesome.ttf");
+	src : url("res/fonts/FontAwesome.otf");
 	font-family: "FontAwesome";
 	font-weight: 100;
 }
