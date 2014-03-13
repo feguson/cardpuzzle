@@ -1,0 +1,16 @@
+*{margin:0;padding:0;position: relative;transition: -webkit-transform .5s}
+
+body{background: #222}
+
+#main{position: absolute;-webkit-perspective: 800px;}
+
+.p{position: absolute;top:5%;left:5%;bottom:5%;right:5%}
+
+.c{width:33.33%;height:33.33%;float:left;-webkit-transform-style: preserve-3d}
+
+.s{position:absolute;top:0;left:0;bottom:0;right:0}
+
+.s0{background:#fff;}
+.s1{background:#8f0;-webkit-transform: rotateY( 180deg );}
+
+.c:hover{-webkit-transform: rotateY( 180deg )}
