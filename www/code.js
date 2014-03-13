@@ -16,6 +16,12 @@ main.style.marginLeft = (wW - size)/2 + 'px';
 main.style.marginTop = (wH - size)/2 + 'px';
 main.style.webkitPerspective = size + 'px';
 
+// UI functions
+
+function msjhide() {
+	document.getElementById('msj').className = "hide";
+}
+
 //initializing
 var lvl = [];
 lvl[0] = '0000000100011100010000000';
