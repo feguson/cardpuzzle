@@ -59,15 +59,27 @@ for(x=0;x<5;x++) {
 }
 
 function load(k) {
-	newlevel = lvl[k];
 
-	for(y=0;y<5;y++) for(x=0;x<5;x++) {
-		if(l[x][y] != newlevel.charAt(0)) {
-			document.getElementById('c' + x + '' + y).style.webkitTransform  += 'rotateY(180deg) ';
+	if(k<3) {
+		newlevel = lvl[k];
+	
+		for(y=0;y<5;y++) for(x=0;x<5;x++) {
+			if(l[x][y] != newlevel.charAt(0)) {
+				document.getElementById('c' + x + '' + y).style.webkitTransform  += 'rotateY(180deg) ';
+			}
+	
+			l[x][y] = parseInt(newlevel.charAt(0));
+			newlevel = newlevel.substring(1);
 		}
+	} else {
+		main.className = "max";
+		for(x=0;x<5;x++) for(y=0;y<5;y++) l[x][y] = 0;
 
-		l[x][y] = parseInt(newlevel.charAt(0));
-		newlevel = newlevel.substring(1);
+		for(x=0;x<(1+Math.sqrt(Math.sqrt(k)))|0;x++) {
+			i = ( Math.random()*5 ) | 0;
+			j = ( Math.random()*5 ) | 0;
+			if(l[i][j]!=1) go(i,j);
+		}
 	}
 }
 
