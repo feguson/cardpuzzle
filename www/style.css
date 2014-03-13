@@ -1,4 +1,4 @@
-*{margin:0;padding:0;position: relative;transition: -webkit-transform 2s}
+*{margin:0;padding:0;position: relative;transition: -webkit-transform .5s}
 
 body{background: #222}
 
@@ -6,11 +6,11 @@ body{background: #222}
 
 .p{position: absolute;top:5%;left:5%;bottom:5%;right:5%}
 
-.c{width:33.33%;height:33.33%;float:left;-webkit-transform-style: preserve-3d}
+.c{width:20%;height:20%;float:left;-webkit-transform-style: preserve-3d}
 
 .s{-webkit-backface-visibility:hidden;position:absolute;height:100%;width:100%;color:transparent;}
 
 .s0{background:#fff;}
 .s1{background:#0c75e0;-webkit-transform: rotateY(180deg);}
 
-.c:hover{-webkit-transform: rotateZ(45deg) rotateY(180deg) rotateZ(-45deg)}
+.c.changed{-webkit-transform: rotateZ(45deg) rotateY(180deg) rotateZ(-45deg)}
