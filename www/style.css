@@ -21,14 +21,17 @@ body{background: #222;font:1em/1.618 "Roboto", sans-serif; font-weight: 100}
 #playstore{position: absolute;top: .5em;left:.5em;z-index: 1}
 
 .icon{font-family: FontAwesome;background:#000;color:#fff;font-size: 2em;width:2em;height:2em;line-height:2em;position: absolute;text-align: center;text-decoration: none;position: absolute;top: 0;right: 0}
+.icon img{width: 2em;height: 2em}
 
 .p{padding: 1rem}
 
+/*
 @font-face {
 	src : url("res/fonts/Roboto-Thin.ttf");
 	font-family: "Roboto";
 	font-weight: 100;
 }
+*/
 
 @font-face {
 	src : url("res/fonts/FontAwesome.otf");
