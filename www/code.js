@@ -179,6 +179,6 @@ function nextlevel() {
 	document.getElementById('msj-title').innerHTML = "Felicidades, pasaste al nivel " + (currentlevel);
 	document.getElementById('msj-txt').innerHTML = "Solo te tomó " + clicks + " click";
 	if(clicks>1) document.getElementById('msj-txt').innerHTML += "s";
-	document.getElementById('msj-txt').innerHTML += " y " + passed + " segundos."
+	document.getElementById('msj-txt').innerHTML += " y " + passed + " segundos.<br/><br/><a href='https://www.facebook.com/sharer/sharer.php?u=http://javierbyte.com/card-puzzle/' class='facebook'><span class='fontawesome'></span> compartir</a><a href='https://twitter.com/home?status=Card%20Puzzle%20on%20Google%20Play%20https://www.facebook.com/sharer/sharer.php?u=http://javierbyte.com/card-puzzle/' class='twitter'><span class='fontawesome'></span> twittear</a>";
 	document.getElementById('msj').className = "";
 }

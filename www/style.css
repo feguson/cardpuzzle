@@ -19,10 +19,14 @@ body{background: #222;font:1em/1.618 "Roboto", sans-serif; font-weight: 100}
 #msj.hide{-webkit-transform: translatey(100%);opacity:0;}
 #cerrar{position: fixed;bottom: 2rem;text-align: center;font-size: .75em;width:100%}
 
+#msj a{display:block;width:50%;float:left;text-align: center;line-height: 3em;color:#fff;text-decoration: none;font-size: .75em}
+.facebook{background:#3B5998;}
+.twitter{background:#4099FF;}
+
 #playstore{position: absolute;top: .5em;left:.5em;z-index: 1}
 
-.icon{font-family: FontAwesome;background:#000;color:#fff;font-size: 2.5em;height:1em;min-width:1em;line-height:1em;text-align: center;text-decoration: none;padding:.25em;float:left;margin:.25em;}
-
+.icon{font-family:FontAwesome;color:#fff;font-size: 2.5em;height:1em;min-width:1em;line-height:1em;text-align: center;text-decoration: none;padding:.25em;float:left;margin:.25em;}
+.fontawesome{font-family: FontAwesome;overflow: visible;font-size: 1.25em;padding:.25em .25em .25em 0;margin-top: .25em}
 
 .top-right{position: absolute;top: 0;right:0;}
 .top-left{position: absolute;top: 0;left: 0}
