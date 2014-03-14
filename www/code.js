@@ -61,7 +61,8 @@ for(x=0;x<5;x++) {
 }
 
 function load(k) {
-
+	clicks = 0;
+	last = Date.now();
 	if(k<19) {
 		newlevel = lvl[k];
 	
@@ -83,6 +84,8 @@ function load(k) {
 			if(l[i][j]!=1) go(i,j);
 		}
 	}
+
+	last = Date.now();
 }
 
 function back() {
@@ -129,9 +132,12 @@ function generate() {
 }
 
 function next() {
+	now = Date.now();
+	passed = (((now-last)/100)|0)/10;
 	document.getElementById('msj-title').innerHTML = "Felicidades, pasaste al nivel " + (currentlevel+1);
 	document.getElementById('msj-txt').innerHTML = "Solo te tomó " + clicks + " click";
 	if(clicks>1) document.getElementById('msj-txt').innerHTML += "s";
+	document.getElementById('msj-txt').innerHTML += " y " + passed + " segundos."
 	document.getElementById('msj').className = "";
 	currentlevel++;
 	clicks = 0;
