@@ -1,4 +1,6 @@
-newlights
+card puzzle
 =========
 
-A simple game for android.
+A simple puzzle game for android.
+
+Built with Phonegap.
