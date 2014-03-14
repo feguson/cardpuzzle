@@ -6,7 +6,7 @@
         id        = "com.pymetic.cardpuzzle"
         version   = "0.0.1">
 
-    <name>Lights</name>
+    <name>Card Puzzle</name>
 
     <description>
         Super simple puzzle with cards.
