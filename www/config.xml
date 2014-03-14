@@ -3,13 +3,13 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.pymetic.lights"
+        id        = "com.pymetic.cardpuzzle"
         version   = "0.0.1">
 
     <name>Lights</name>
 
     <description>
-        Super simple game about changing lights.
+        Super simple puzzle with cards.
     </description>
 
     <author href="http://pymetic.mx" email="info@pymetic.mx">
