@@ -1,8 +1,8 @@
 window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
 
 //resizing
-var wW = window.innerWidth;
-var wH = window.innerHeight;
+var wW = $(window).width();
+var wH = $(window).height();
 var size = 0;
 
 if(wW > wH) {
