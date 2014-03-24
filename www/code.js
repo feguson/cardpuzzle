@@ -45,6 +45,16 @@ lvl[18] = '0111011011101011101101110';
 lvl[19] = '0101001110111111010100000';
 lvl[20] = '1000101110001000000001110';
 lvl[21] = '0111011011111110000011111';
+lvl[22] = '0101111110010011011101111';
+lvl[23] = '0001101110001100010000110';
+lvl[24] = '0100111001110001110101101';
+lvl[25] = '1000101101111000111101010';
+lvl[26] = '0000101111101101111000110';
+lvl[27] = '1011100100110100101010001';
+lvl[28] = '1100001101100010000111011';
+lvl[29] = '1011110010001011001001110';
+lvl[30] = '1100110110111100101100011';
+lvl[31] = '0101010101010101010101010';
 var originallevels = lvl.length;
 
 //is this a new record?
@@ -81,17 +91,17 @@ function load(k) {
 	document.getElementById("level").innerHTML = (k);
 
 	if(k<lvl.length) {
-		
+
 		if(k>20) main.className = "max";
 		else main.className = "normal";
 
 		newlevel = lvl[k];
-	
+
 		for(y=0;y<5;y++) for(x=0;x<5;x++) {
 			if(l[x][y] != newlevel.charAt(0)) {
 				document.getElementById('c' + x + '' + y).style.webkitTransform  += 'rotateY(180deg) ';
 			}
-	
+
 			l[x][y] = parseInt(newlevel.charAt(0));
 			newlevel = newlevel.substring(1);
 
