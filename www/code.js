@@ -1,5 +1,5 @@
-window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
 document.addEventListener("deviceready", onDeviceReady, false);
+window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
 
 function onDeviceReady() {
 //resizing
@@ -119,10 +119,10 @@ function load(k) {
 }
 
 //ui constrols
-function msjhide() {
+$('#msj').on('click', function() {
 	document.getElementById('msj').className = "hide";
 	load(currentlevel);
-}
+});
 
 function back() {
 	if(currentlevel>2) load(currentlevel-2);
