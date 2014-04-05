@@ -1,18 +1,15 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
 
-function onDeviceReady() {
 //resizing
 var wW = $(window).width();
 var wH = $(window).height();
 var size = 0;
-
 if(wW > wH) {
 	size = wH;
 } else {
 	size = wW;
 }
-
 main = document.getElementById('main');
 main.style.width = size + 'px';
 main.style.height = size + 'px';
@@ -194,4 +191,19 @@ function nextlevel() {
 	document.getElementById('msj').className = "";
 }
 
-} //onDeviceReady
+function onDeviceReady() {
+	wW = $(window).width();
+	wH = $(window).height();
+	size = 0;
+	if(wW > wH) {
+		size = wH;
+	} else {
+		size = wW;
+	}
+	main = document.getElementById('main');
+	main.style.width = size + 'px';
+	main.style.height = size + 'px';
+	main.style.marginLeft = (wW - size)/2 + 'px';
+	main.style.marginTop = (wH - size)/2 + 'px';
+	main.style.webkitPerspective = size + 'px';
+}
