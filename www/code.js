@@ -1,4 +1,5 @@
 window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
+document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
 //resizing
