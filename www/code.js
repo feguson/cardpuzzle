@@ -1,5 +1,6 @@
 window.addEventListener('load', function() {FastClick.attach(document.body);}, false);
 
+function onDeviceReady() {
 //resizing
 var wW = $(window).width();
 var wH = $(window).height();
@@ -192,3 +193,5 @@ function nextlevel() {
 	document.getElementById('msj-txt').innerHTML += " y " + passed + " segundos.<br/><br/><a href='https://www.facebook.com/sharer/sharer.php?u=http://javierbyte.com/card-puzzle/' class='facebook'><span class='fontawesome'></span> compartir</a><a href='https://twitter.com/home?status=Card%20Puzzle%20on%20Google%20Play%20https://www.facebook.com/sharer/sharer.php?u=http://javierbyte.com/card-puzzle/' class='twitter'><span class='fontawesome'></span> twittear</a>";
 	document.getElementById('msj').className = "";
 }
+
+} //onDeviceReady
